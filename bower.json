@@ -1,5 +1,5 @@
 {
-  "name": "BestApp",
+  "name": "bestapp",
   "homepage": "https://github.com/BestDesigners/BestApp",
   "authors": [
     "Dennis Calazans <dennis.calazans@apple.com>"
@@ -15,7 +15,6 @@
     "tests"
   ],
   "dependencies": {
-    "jquery": "^3.0.0",
     "bootstrap": "^3.3.6"
   }
 }
