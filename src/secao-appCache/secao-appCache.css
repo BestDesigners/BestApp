@@ -1,0 +1,26 @@
+#dogs {
+    text-align: center;
+}
+#dogs .dog {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    background-size: cover;
+    background-position: center center;
+}
+
+#dogs .dog:nth-child(1) { background-image: url(../../images/dogs/dog-1.jpg); }
+#dogs .dog:nth-child(2) { background-image: url(../../images/dogs/dog-2.jpg); }
+#dogs .dog:nth-child(3) { background-image: url(../../images/dogs/dog-3.jpg); }
+#dogs .dog:nth-child(4) { background-image: url(../../images/dogs/dog-4.jpg); }
+#dogs .dog:nth-child(5) { background-image: url(../../images/dogs/dog-5.jpg); }
+#dogs .dog:nth-child(6) { background-image: url(../../images/dogs/dog-6.jpg); }
+#dogs .dog:nth-child(7) { background-image: url(../../images/dogs/dog-7.jpg); }
+#dogs .dog:nth-child(8) { background-image: url(../../images/dogs/dog-8.jpg); }
+#dogs .dog:nth-child(9) { background-image: url(../../images/dogs/dog-9.jpg); }
+#dogs .dog:nth-child(10) { background-image: url(../../images/dogs/dog-10.jpg);  }
+
+
+#dogs .dog img {
+    display: none;
+}

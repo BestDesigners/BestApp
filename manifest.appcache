@@ -1,0 +1,19 @@
+CACHE MANIFEST
+#v2wssssssssssssssssssssss
+
+CACHE:
+#LIBS
+libs/jquery/dist/jquery.min.js
+libs/bootstrap/dist/js/bootstrap.min.js
+
+#SECAO LOCAL STORAGE
+src/secao-localStorage/secao-localStorage.js
+
+#SECAO APP CACHE
+src/secao-appCache/secao-appCache.css
+
+NETWORK:
+*
+
+FALLBACK:
+images/dogs/ images/offline.png
