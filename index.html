@@ -1,13 +1,24 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" manifest="manifest.appcache">
 
 <head>
+    <script>
+    applicationCache.addEventListener('updateready', function () {
+        if (window.applicationCache.status == window.applicationCache.UPDATEREADY) {
+            window.applicationCache.swapCache();
+            window.applicationCache.update();
+            window.location.reload();
+        }
+    });
+    </script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>BestApp</title>
     <link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="src/secao-appCache/secao-appCache.css">
 </head>
+
 <body>
     <div class="container">
         <header>
@@ -15,13 +26,32 @@
             <nav>
                 <h2>Menu</h2>
                 <ul>
-                    <li><a href="#localstorage">Local Storage</a></li>
-                    <li><a href="#localstorage">Session Storage</a></li>
+                    <li><a href="#appCache">App Cache</a></li>
+                    <li><a href="#localStorage">Local Storage</a></li>
                 </ul>
             </nav>
         </header>
         <main role="main">
+
+            <sections id="appCache">
+                <h1>App Cache <small>Atualização automática</small></h1>
+
+
+                <div id="dogs">
+                    <figure class="dog"><img class="img-responsive" src="images/dogs/dog-1.jpg" alt="Cachorro 1"></figure>
+                    <figure class="dog"><img class="img-responsive" src="images/dogs/dog-2.jpg" alt="Cachorro 2"></figure>
+                    <figure class="dog"><img class="img-responsive" src="images/dogs/dog-3.jpg" alt="Cachorro 3"></figure>
+                    <figure class="dog"><img class="img-responsive" src="images/dogs/dog-4.jpg" alt="Cachorro 4"></figure>
+                    <figure class="dog"><img class="img-responsive" src="images/dogs/dog-5.jpg" alt="Cachorro 5"></figure>
+                    <figure class="dog"><img class="img-responsive" src="images/dogs/dog-6.jpg" alt="Cachorro 6"></figure>
+                    <figure class="dog"><img class="img-responsive" src="images/dogs/dog-7.jpg" alt="Cachorro 7"></figure>
+                    <figure class="dog"><img class="img-responsive" src="images/dogs/dog-8.jpg" alt="Cachorro 8"></figure>
+                    <figure class="dog"><img class="img-responsive" src="images/dogs/dog-9.jpg" alt="Cachorro 9"></figure>
+                    <figure class="dog"><img class="img-responsive" src="images/dogs/dog-10.jpg" alt="Cachorro 10"></figure>
+                </div>
+            </sections>
             <section id="localStorage">
+                <h1>Local Storage <small>Contador</small></h1>
                 <div class="jumbotron">
                     <h1><span class="contador">-</span></h1>
                     <p>Contador</p>
@@ -43,8 +73,7 @@
         </footer>
         <script src="libs/jquery/dist/jquery.min.js"></script>
         <script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
-        <script src="src/secao.localStorage.js" charset="utf-8"></script>
-        <script src="src/secao.sessionStorage.js" charset="utf-8"></script>
+        <script src="src/secao-localStorage/secao-localStorage.js"></script>
     </div>
 </body>
 
