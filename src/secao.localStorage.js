@@ -1,6 +1,20 @@
-var novoValor, valorAtual;
+function incrementarContador() {
+	var novoValor, valorAtual;
+	valorAtual = localStorage.getItem('contador') || 0;
+	novoValor = parseInt(valorAtual) + 1;
+	localStorage.setItem('contador', novoValor);
+}
 
-valorAtual = $('#localStorage .contador').text();
-novoValor = parseInt(valorAtual) + 1;
 
-$('#localStorage .contador').text(novoValor);
+function atualizarContador() {
+	var contador = localStorage.getItem('contador') || 0;
+	$('#localStorage .contador').text(contador);
+}
+
+
+$('#localStorage .btn').on('click', function(){
+	incrementarContador();
+	atualizarContador();
+});
+
+atualizarContador();
