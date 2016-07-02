@@ -1,5 +1,5 @@
 CACHE MANIFEST
-#v2wssssssssssssssssssssss
+#v2sss
 
 CACHE:
 #LIBS
@@ -8,6 +8,7 @@ libs/bootstrap/dist/js/bootstrap.min.js
 
 #SECAO LOCAL STORAGE
 src/secao-localStorage/secao-localStorage.js
+src/secao-onlineStatus/secao-onlineStatus.js
 
 #SECAO APP CACHE
 src/secao-appCache/secao-appCache.css

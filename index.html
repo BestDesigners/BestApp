@@ -26,13 +26,16 @@
             <nav>
                 <h2>Menu</h2>
                 <ul>
+                    <li><a href="#onlineStatus">Online Status</a></li>
                     <li><a href="#appCache">App Cache</a></li>
                     <li><a href="#localStorage">Local Storage</a></li>
                 </ul>
             </nav>
         </header>
         <main role="main">
-
+            <section id="onlineStatus">
+                <h1><span class="status">-</span> <small><span class="quedas">-</span> quedas</small></h1>
+            </section>
             <sections id="appCache">
                 <h1>App Cache <small>Atualização automática</small></h1>
 
@@ -59,9 +62,6 @@
                     <p><a class="btn btn-danger btn-lg" href="#" role="button">limpar</a></p>
                 </div>
             </section>
-            <section id="onlineStatus">
-                <h1><span class="status">-</span> <small><span class="quedas">-</span> quedas</small></h1>
-            </section>
         </main>
         <footer>
             <a href="http://deploybot.com" target="_blank">
@@ -74,6 +74,7 @@
         <script src="libs/jquery/dist/jquery.min.js"></script>
         <script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
         <script src="src/secao-localStorage/secao-localStorage.js"></script>
+        <script src="src/secao-onlineStatus/secao-onlineStatus.js"></script>
     </div>
 </body>
 
