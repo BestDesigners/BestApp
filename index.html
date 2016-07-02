@@ -1,46 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>BestApp</title>
     <link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css">
 </head>
 <body>
-<div class="container">
-
-    <header>
-        <h1>Best APP</h1>
-
-        <nav>
-            <h2>Menu</h2>
-            <ul>
-                <li><a href="#localstorage">Local Storage</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main role="main">
-        <section id="localStorage">
-            <div class="jumbotron">
-              <h1><span class="contador">-</span></h1>
-              <p>Contador</p>
-              <p><a class="btn btn-primary btn-lg" href="#" role="button">+1</a></p>
-              <p><a class="btn btn-danger btn-lg" href="#" role="button">limpar</a></p>
-            </div>
-        </section>
-        <section id="onlineStatus">
-            <h1><span class="status">-</span> <small><span class="quedas">-</span> quedas</small></h1>
-        </section>
-    </main>
-
-    <footer>
-        <a href="http://deploybot.com"><img src="https://denniscalazans.deploybot.com/badge/88313866119889/78029.svg" alt="Deployment status from DeployBot"></a>
-        <a href="https://codeclimate.com/github/BestDesigners/BestApp"><img src="https://codeclimate.com/github/BestDesigners/BestApp/badges/issue_count.svg" /></a>
-    </footer>
-    <script src="libs/jquery/dist/jquery.min.js" charset="utf-8"></script>
-    <script src="libs/bootstrap/dist/js/bootstrap.min.js" charset="utf-8"></script>
-    <script src="src/secao.localStorage.js" charset="utf-8"></script>
-    <script src="src/secao.sessionStorage.js" charset="utf-8"></script>
-</div>
+    <div class="container">
+        <header>
+            <h1>Best APP</h1>
+            <nav>
+                <h2>Menu</h2>
+                <ul>
+                    <li><a href="#localstorage">Local Storage</a></li>
+                    <li><a href="#localstorage">Session Storage</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main role="main">
+            <section id="localStorage">
+                <div class="jumbotron">
+                    <h1><span class="contador">-</span></h1>
+                    <p>Contador</p>
+                    <p><a class="btn btn-primary btn-lg" href="#" role="button">+1</a></p>
+                    <p><a class="btn btn-danger btn-lg" href="#" role="button">limpar</a></p>
+                </div>
+            </section>
+            <section id="onlineStatus">
+                <h1><span class="status">-</span> <small><span class="quedas">-</span> quedas</small></h1>
+            </section>
+        </main>
+        <footer>
+            <a href="http://deploybot.com" target="_blank">
+                <img src="https://denniscalazans.deploybot.com/badge/88313866119889/78029.svg" alt="Deployment status from DeployBot">
+            </a>
+            <a href="https://codeclimate.com/github/BestDesigners/BestApp" target="_blank">
+                <img src="https://codeclimate.com/github/BestDesigners/BestApp/badges/issue_count.svg" />
+            </a>
+        </footer>
+        <script src="libs/jquery/dist/jquery.min.js"></script>
+        <script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="src/secao.localStorage.js" charset="utf-8"></script>
+        <script src="src/secao.sessionStorage.js" charset="utf-8"></script>
+    </div>
 </body>
+
 </html>
