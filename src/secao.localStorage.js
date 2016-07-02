@@ -11,9 +11,19 @@ function atualizarContador() {
 	$('#localStorage .contador').text(contador);
 }
 
+function limparContador() {
+	var contador = localStorage.removeItem('contador') || 0;
+	$('#localStorage .contador').text(contador);
+}
+
 
 $('#localStorage .btn').on('click', function(){
 	incrementarContador();
+	atualizarContador();
+});
+
+$('#localStorage .btn-danger').on('click', function(){
+	limparContador();
 	atualizarContador();
 });
 
